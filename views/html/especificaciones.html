@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bidinggame "el mejor comparador de ofertas de videojuegos"</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="/views/css/scss/lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/views/css/scss/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/views/css/scss/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/views/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/views/img/logos/icon.png">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="nav-item nav-link d-none d-lg-block"><img src="img/logos/logotrasp.png" width="60px" height="60px"></a>
+            <a href="" class="navbar-brand d-block d-lg-block">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-danger">Biding</span>Game</h1>
+            </a>
+            
+            <!--start divisa and region1-->
+            
+            <div class="share-button" >
+                <div class="share-button__back">
+                  <a class="share__link" href="#" title="Dólar">
+                    <img src="img/reganddv/OIP.png" width="40px" height="40px">
+              </a>
+              <a class="share__link " href="#" title="Euro">
+                <img src="img/reganddv/OIP (1).png " width="40px" height="40px">
+              </a>
+              <a class="share__link" href="#" title="Peso Boliviano">
+                <img src="img/reganddv/800px_COLOURBOX48283751.png " width="40px" height="40px">
+              </a>
+                </div>
+                <div class="share-button__front">
+                  <p class="share-button__text">divisa</p>
+                </div>
+              </div>
+              <!--end divisa y region1-->
+              <!--start divisa and region2-->
+            
+            <div class="share-button" id="pais">
+                <div class="share-button__back" >
+                    <a class="share__link" href="#" title="bolivia" id="pais2">
+                    <img src="img/reganddv/descarga (3).ico" width="40px" height="40px">
+                    </a>
+                    <a class="share__link " href="#" title="colombia" id="pais2">
+                            <img src="img/reganddv/Flag_of_Colombia.svg.png" width="40px" height="40px">
+                    </a>
+                    <a class="share__link" href="#" title="brazil" id="pais2">
+                            <img src="img/reganddv/Flag_of_Brazil.svg.ico " width="40px" height="40px">
+                    </a>
+                </div>
+                    <div class="share-button__front">
+                        <p class="share-button__text">Pais</p>
+                    </div>
+            </div>
+              <!--end divisa y region2-->
+            
+              <!--inicio de sesion start-->
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="buttonsbd ml-auto">
+                    <button class="slidebd" ><img  src="img/logos/usuariobd.png" width="40px" height="40px">           Iniciar Sesion</button>
+                </div>
+            </div>
+            <!--inicio de sesion end-->
+            <!--inicio de sesion mobile start-->
+            <button class="slidebd d-block d-lg-none" id="btn-show-mobile" ><img  src="img/logos/usuariobd.png" width="40px" height="40px"></button>
+            <!--inicio de sesion mobile end--> 
+        </nav>
+        
+    </div>
+    
+     <!-- Navbar End -->
+     <!--segundo nav metabuscador start-->
+     <div>
+        <nav class="scrolling-nav d-none d-lg-block " id="scrollnavm">
+            <button id="toggleFilters" class="btn">Mostrar Filtros</button>
+            <form id="filtroForm">
+        
+                <div class="filtro">
+                    <label for="categoria">Por Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="accion">Acción</option>
+                        <option value="aventura" selected>Aventura</option>
+                        <option value="arcade" selected>Arcade</option>
+                        <option value="deportes" selected>Deportes</option>
+                        <option value="fps/fpp" selected>FPS/FPP</option>
+                        <option value="estrategia" selected>Estrategia</option>
+                        <option value="simulacion" selected>Simulación</option>
+                        <option value="todos" selected>Todas las categorias</option>
+                        <option value="careeras">Carreras</option>
+                        <!-- Otros géneros -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="plataforma">Por Tienda:</label>
+                    <select id="plataforma" name="plataforma">
+                        <option value="todos" selected>Todas las tiendas</option>
+                        <option value="epic">Epic Games</option>
+                        <option value="steam">Steam</option>
+                        <option value="uplay">Uplay</option>
+                        <option value="origin">Origin</option>
+                        <option value="instant">Instant Gaming</option>
+                        <option value="eneba">Eneba</option>
+
+                        <!-- Otras plataformas -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="edad"> Por Edad:</label>
+                    <select id="edad" name="edad">
+                        <option value="10+">Mayores de 10 años</option>
+                        <option value="todos" selected>Todos los públicos</option>
+                        <option value="13+">Mayores de 13 años</option>
+                        <option value="17+">Mayores de 17 años</option>
+                        <option value="18+">Mayores de 18 años</option>
+                        <!-- Otras opciones de edad -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="precio">Por Precio:</label>
+                    <select id="precio" name="precio">
+                        <option value="menos20">Menos de $20</option>
+                        <option value="gratis">Gratis</option>
+                        <option value="todos" selected>Todos los Precios</option>
+                        <option value="menos60">Menos de $60</option>
+                        <option value="menos100">Menos de $100</option>
+                        <option value="mas100">Mas de $100</option>
+                        <!-- Otros rangos de precio -->
+                    </select>
+                </div>
+            </form>
+            
+            <div class="metabuscador" id="mtbid">
+                <input id="searchInput" type="text" placeholder="Buscar" >
+                <div class="mtbbdg">
+                    <i class="fa fa-search" id="fa fa"></i>
+                </div>
+            </div>     
+        </nav>
+    </div>
+    <!--segundo nav metabuscador end-->
+
+    <!-- loader start -->
+    <div class="contenedor_loader">
+        <div class="loader"></div>
+    </div>
+    <!-- loader End -->
+    
+
+    <!-- ofertas Start -->
+    <div class="container-fluid pt-5 ">
+        <div class="container py-1 " id="ofdiv">
+            
+            <div class="textofer">
+              <a href="#ofdiv" class="ancla"><h4 class="text-secondary mb-1" herf>Ofertas Especiales</h4></a>
+                
+            </div>
+            <div class="buttonsbd ml-auto ">
+                <button class="oferbtn" >Ver Mas</button>
+                </div>
+                <br>
+            
+            <div class="row pb-3 ">
+                <div class="col-md-6 mb-3">
+                    <div class="ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="img/ofertas/header_ratio (1).jpg" alt="" class="horizontalimg">
+                        <img src="img/proveedor/logo_steam.svg" class="steamimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv21">
+                                <div>
+                                    <h4 class=" co text-white" id="rayon">5.32 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            <div id="oferv31">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="text-white" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6  mb-3">
+                    <div class="ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="img/ofertas/header.jpg" alt="" class="horizontalimg">
+                        <img src="img/proveedor/logo_steam.svg" class="steamimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv21">
+                                <div>
+                                    <h4 class=" co text-white" id="rayon">5.32 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            <div id="oferv31">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="text-white" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                </div>
+                    </div>
+                    
+                <div class="col-md-6  mb-3">
+                    <div class="ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="img/ofertas/header_alt_assets_1.jpg" alt="" class="horizontalimg">
+                        <img src="img/proveedor/logo_steam.svg" class="steamimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv21">
+                                <div>
+                                    <h4 class=" co text-white" id="rayon">5.32 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            <div id="oferv31">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="text-white" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6  mb-3">
+                    <div class=" ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="img/ofertas/header_ratio.jpg" alt="" class="horizontalimg">
+                        <img src="img/proveedor/logo_steam.svg" class="steamimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv21">
+                                <div>
+                                    <h4 class=" co text-white" id="rayon">5.32 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            <div id="oferv31">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="text-white" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class=" ofertascud d-flex flex-column text-md-left bg-dark mb-2 p-3 p-sm-1">
+                        <img src="img/ofertas epic/soulvars-hy3ma.webp" alt="" class="verticalimg">
+                        <img src="img/proveedor/Epic_Games_logo.svg.svg" class="epicimg">
+                        <div class="descuento ">
+                        <div id="oferv">
+                            <div>
+                                <h4 class=" co text-white">-25%</h4>
+                            </div>
+                        </div>
+                        <div id="oferv2">
+                            <div>
+                                <h4 class=" co text-white" id="rayon">5.32 $   
+                                </h4>
+                            </div>
+                        </div>
+                        <div id="oferv3">
+                            <div>
+                                <h4 class=" co text-secondary ">3.99 $   
+                                </h4>
+                            </div>
+                        </div>
+                        </div>
+                        <h6 class="text-white" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    
+                    </div>
+                   
+                    
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 ">
+                    <div class=" ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="img/ofertas epic/shadow-gambit--the-cursed-crew-6jaeo.webp" alt="" class="verticalimg">
+                        <img src="img/proveedor/Epic_Games_logo.svg.svg" class="epicimg" >
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv2">
+                                <div>
+                                    <h4 class=" co text-white" id="rayon">5.32 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            <div id="oferv3">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="text-white" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 ">
+                    <div class=" ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="img/ofertas/hero_capsule.jpg" alt="" class="verticalimg">
+                        <img src="img/proveedor/Epic_Games_logo.svg.svg" class="epicimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv2">
+                                <div>
+                                    <h4 class=" co text-white" id="rayon">5.32 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            <div id="oferv3">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="text-white" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ofertas End -->
+
+
+    <!-- Team Start -->
+    <div class="container mt-5 pt-5 pb-3">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">Team Member</h4>
+            <h1 class="display-4 m-0">Meet Our <span class="text-primary">Team Member</span></h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="img/team-1.jpg" alt="">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5>Mollie Ross</h5>
+                            <i>Founder & CEO</i>
+                        </div>
+                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="img/team-2.jpg" alt="">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5>Jennifer Page</h5>
+                            <i>Chef Executive</i>
+                        </div>
+                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="img/team-3.jpg" alt="">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5>Kate Glover</h5>
+                            <i>Doctor</i>
+                        </div>
+                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="img/team-4.jpg" alt="">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5>Lilly Fry</h5>
+                            <i>Trainer</i>
+                        </div>
+                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- About Start -->
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                <h4 class="text-secondary mb-3">About Us</h4>
+                <h1 class="display-4 mb-4"><span class="text-primary">Boarding</span> & <span class="text-secondary">Daycare</span></h1>
+                <h5 class="text-muted mb-3">Amet stet amet ut. Sit no vero vero no dolor. Sed erat ut sea. Just clita ut stet kasd at diam sit erat vero sit.</h5>
+                <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                <ul class="list-inline">
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Best In Industry</h5></li>
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Emergency Services</h5></li>
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>24/7 Customer Support</h5></li>
+                </ul>
+                <a href="" class="btn btn-lg btn-primary mt-3 px-4">Learn More</a>
+            </div>
+            <div class="col-lg-5">
+                <div class="row px-3">
+                    <div class="col-12 p-0">
+                        <img class="img-fluid w-100" src="img/about-1.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="img/about-2.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="img/about-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-danger">Biding</span>Game</h1>
+                <p class="m-0">Biding Game es un innovador metabuscador diseñado para los apasionados de los videojuegos digitales. Con la misión de ofrecer la mejor experiencia de compra en línea, Biding Game rastrea y compara ofertas de videojuegos en múltiples plataformas y tiendas en línea, todo en un solo lugar conveniente.
+
+                    ¿Buscas las mejores ofertas en tus títulos favoritos? Biding Game te permite explorar un vasto catálogo de videojuegos digitales, mostrándote las opciones más atractivas en términos de precios y promociones. No más búsquedas interminables en diferentes sitios web; Biding Game centraliza la información para que puedas tomar decisiones informadas y obtener más por tu dinero.</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-info mb-4">Ponte en contacto</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Cercado, Cochabamba, Bolivia</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+591 694 50362</p>
+                        <p><i class="fa fa-envelope mr-2"></i>rodrigedmoncl@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-info mb-4">Enlaces Populares</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Ofertas</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Juegos gratuitos</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Lo mas buscado</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-info mb-4">Deja un comentario para ayudarnos a mejorar. </h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0" placeholder="Asunto" required="required" />
+                            </div>
+                            <div class="form-group">
+                                
+                                <textarea id="comentario" name="comentario" class="form-control border-0" rows="4" cols="4" placeholder="Comentar"required="required"></textarea><br>
+                            </div>
+                            <div>
+                                <button class="slidebd" type="submit" id="envah">Enviar Ahora</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">BidingGame.search</a>. Todos los derechos reservados. Diseñado por
+                    <a class="text-white font-weight-bold" href="">blue-blood software</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Términos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primaryy back-to-top"><i class="fa fa-search"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/views/css/scss/lib/easing/easing.min.js"></script>
+    <script src="/views/css/scss/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/views/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bidinggame "el mejor comparador de ofertas de videojuegos"</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="/views/css/scss/lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/views/css/scss/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/views/css/scss/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/views/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/views/img/logos/icon.png">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+ <div id="spinner" class="show  position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- Spinner End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="/" class="nav-item nav-link d-none d-lg-block"><img src="/views/img/logos/logotrasp.png" width="60px" height="60px"></a>
+            <a href="" class="navbar-brand d-block d-lg-block">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-danger">Biding</span>Game</h1>
+            </a>
+            
+            <!--start divisa and region1-->
+            
+            <div class="share-button" >
+                <div class="share-button__back">
+                  <a class="share__link" href="#" title="Dólar">
+                    <img src="/views/img/navsup/divisa/OIP.png" width="40px" height="40px">
+              </a>
+              <a class="share__link " href="#" title="Euro">
+                <img src="/views/img/navsup/divisa/OIP (1).png " width="40px" height="40px">
+              </a>
+              <a class="share__link" href="#" title="Peso Boliviano">
+                <img src="/views/img/navsup/divisa/800px_COLOURBOX48283751.png " width="40px" height="40px">
+              </a>
+                </div>
+                <div class="share-button__front">
+                  <p class="share-button__text">divisa</p>
+                </div>
+              </div>
+              <!--end divisa y region1-->
+              <!--start divisa and region2-->
+            
+            <div class="share-button" id="pais">
+                <div class="share-button__back" >
+                    <a class="share__link" href="#" title="bolivia" id="pais2">
+                    <img src="/views/img/navsup/region/descarga (3).ico" width="40px" height="40px">
+                    </a>
+                    <a class="share__link " href="#" title="colombia" id="pais2">
+                            <img src="/views/img/navsup/region/Flag_of_Colombia.svg.png" width="40px" height="40px">
+                    </a>
+                    <a class="share__link" href="#" title="brazil" id="pais2">
+                            <img src="/views/img/navsup/region/Flag_of_Brazil.svg.ico " width="40px" height="40px">
+                    </a>
+                </div>
+                    <div class="share-button__front">
+                        <p class="share-button__text">Pais</p>
+                    </div>
+            </div>
+              <!--end divisa y region2-->
+            
+              <!--inicio de sesion start-->
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="buttonsbd ml-auto">
+                    <button onclick="window.location.href = '/signin';" class="slidebd" ><img  src="/views/img/logos/usuariobd.png" width="40px" height="40px">           Iniciar Sesion</button>
+                </div>
+            </div>
+            <!--inicio de sesion end-->
+            <!--inicio de sesion mobile start-->
+            <button class="slidebd d-block d-lg-none" id="btn-show-mobile" ><img  src="/views/img/logos/usuariobd.png" width="40px" height="40px"></button>
+            <!--inicio de sesion mobile end--> 
+        </nav>
+        
+    </div>
+    
+     <!-- Navbar End -->
+     <!--segundo nav metabuscador start-->
+     <div>
+        <nav class="scrolling-nav d-none d-lg-block " id="scrollnavm">
+            <button id="toggleFilters" class="btn">Mostrar Filtros</button>
+            <form id="filtroForm">
+        
+                <div class="filtro">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="accion">Acción</option>
+                        <option value="aventura" selected>Aventura</option>
+                        <option value="arcade" selected>Arcade</option>
+                        <option value="deportes" selected>Deportes</option>
+                        <option value="fps/fpp" selected>FPS/FPP</option>
+                        <option value="estrategia" selected>Estrategia</option>
+                        <option value="simulacion" selected>Simulación</option>
+                        <option value="todos" selected>Todas las categorias</option>
+                        <option value="careeras">Carreras</option>
+                        <option value="btroyale">Battle Royale</option>
+                        <option value="multijugador">Multijugador</option>
+                        <option value="moba">Moba</option>
+                    
+                        <!-- Otros géneros -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="plataforma">Tienda:</label>
+                    <select id="plataforma" name="plataforma">
+                        <option value="todos" selected>Todas las tiendas</option>
+                        <option value="epic">Epic Games</option>
+                        <option value="steam">Steam</option>
+                        <option value="uplay">Uplay</option>
+                        <option value="origin">Origin</option>
+                        <option value="instant">Instant Gaming</option>
+                        <option value="eneba">Eneba</option>
+
+                        <!-- Otras plataformas -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="edad">Edad:</label>
+                    <select id="edad" name="edad">
+                        <option value="10+">Mayores de 10 años</option>
+                        <option value="todos" selected>Todos los públicos</option>
+                        <option value="13+">Mayores de 13 años</option>
+                        <option value="17+">Mayores de 17 años</option>
+                        <option value="18+">Mayores de 18 años</option>
+                        <!-- Otras opciones de edad -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="precio">Precio:</label>
+                    <select id="precio" name="precio">
+                        <option value="menos20">Menos de $20</option>
+                        <option value="gratis">Gratis</option>
+                        <option value="todos" selected>Todos los Precios</option>
+                        <option value="menos60">Menos de $60</option>
+                        <option value="menos100">Menos de $100</option>
+                        <option value="mas100">Mas de $100</option>
+                        <!-- Otros rangos de precio -->
+                    </select>
+                </div>
+            </form>
+            
+            <div class="metabuscador" id="mtbid">
+                <input id="searchInput" type="text" placeholder="Buscar" >
+                <div class="mtbbdg">
+                    <i class="fa fa-search" id="fa fa"></i>
+                </div>
+            </div>     
+        </nav>
+    </div>
+    <!--segundo nav metabuscador end-->
+
+
+ 
+
+    <!-- Carousel Start epic -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            
+            <div class="carousel-inner">
+                <a href="#header-carousel" class="ancla"><h3 class="text-white" >Destacados Y Recomendados</h3></a>
+                <div class="carousel-item active">
+                    <img class="w-1100" src="https://cdn2.unrealengine.com/egs-alan-wake-2-carousel-desktop-1248x702-355ef4f0ddf5.jpg?h=480&quality=medium&resize=1&w=854" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-start justify-content-center">
+                        <div class="p-3" style="max-width: 400px;">
+                            <h3 class="text-white mb-3 d-none d-sm-block">Epic Games Store</h3>
+                            <h1 class="display-3 text-white mb-3"><img src="https://cdn2.unrealengine.com/egs-alan-wake-2-carousel-logo-350x100-25d89157f21e.png"></h1>
+                            <h3 class="text-white mb-3 d-none d-sm-block">Próximamente</h3>
+                            <h5 class="text-white mb-3 d-none d-sm-block">Una serie de asesinatos rituales amenaza Bright Falls en el nuevo juego de terror y supervivencia psicológico de Remedy.</h5>
+                            <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Precómpralo Ya</a>
+                            <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-1100" src="https://cdn2.unrealengine.com/egs-fc24-ultimate-carousel-desktop-1920x1080-24ba0952c33e.jpg?h=720&quality=medium&resize=1&w=1280" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-start justify-content-center">
+                        <div class="p-3" style="max-width: 400px;">
+                            <h3 class="text-white mb-3 d-none d-sm-block">Epic Games Store</h3>
+                            <h1 class="display-3 text-white mb-3"><img src="https://cdn2.unrealengine.com/egs-fc24-ultimate-carousel-logo-350x261-778d03f6f36d.png"></img></h1>
+                            <h3 class="text-white mb-3 d-none d-sm-block">Disponible el 29 de septiembre</h3>
+                            <h5 class="text-white mb-3 d-none d-sm-block">Precompra la Ultimate Edition hasta el 22 de agosto para obtener un héroe de la UEFA Champions League o la UEFA CL femenina.</h5>
+                            <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Precómpralo Ya</a>
+                            <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-1100" src="https://cdn2.unrealengine.com/desktop-image-1248x702-1248x702-cf8b044c82ea.jpg?h=480&quality=medium&resize=1&w=854" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-start justify-content-center">
+                        <div class="p-3" style="max-width: 400px;">
+                            <h3 class="text-white mb-3 d-none d-sm-block">Epic Games Store</h3>
+                            <h1 class="display-3 text-white mb-3"><img src="https://cdn2.unrealengine.com/genshin-impact-logo-en-v2-350x139-101962c8032b.png"></h1>
+                            <h3 class="text-white mb-3 d-none d-sm-block">Versión 4.0 ya disponible</h3>
+                            <h5 class="text-white mb-3 d-none d-sm-block">La versión 4.0 presenta la Nación de la Justicia; además, sumérgete bajo el agua y explora las maravillas que esconde con Lyney, Lynette y Freminet.</h5>
+                            <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Juega Gratis</a>
+                            <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-1100" src="https://cdn.akamai.steamstatic.com/steam/apps/1172470/ss_baffff3e89143c5ba609740d78db008507ef4702.600x338.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-start justify-content-center">
+                        <div class="p-3" style="max-width: 400px;">
+                            <h3 class="text-white mb-3 d-none d-sm-block">Steam</h3>
+                            <h1 class="text-white mb-3 d-none d-sm-block">Counter-Strike: Global Offensive</h1>
+                            <h3 class="text-white mb-3 d-none d-sm-block">Ya disponible</h3>
+                            <h5 class="text-white mb-3 d-none d-sm-block">Counter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos del que fue pionera la franquicia cuando salió hace 19 años. CS:GO trae nuevos mapas, personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido clásico de CS.</h5>
+                            <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Juega Gratis</a>
+                            <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primaryy rounded" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primaryy rounded" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End epic-->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!-- ofertas Start -->
+    <div class="container-fluid pt-5 ">
+        <div class="container py-1 " id="ofdiv">
+            
+            <div class="textofer">
+              <a href="#ofdiv" class="ancla"><h3 class="text-secondary mb-1" herf>Ofertas Especiales</h3></a>
+                
+            </div>
+            <div class="buttonsbd ml-auto ">
+                <button onclick="window.location.href = '/ofers';" class="oferbtn" >Ver Mas</button>
+                </div>
+                <br>
+            
+            <div class="row pb-3 ">
+                <div class="col-md-6 mb-3">
+                    <div class="ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="/views/img/ofertas/ofertas steam/header_ratio (1).jpg" alt="" class="horizontalimg">
+                        <img src="/views/img/proveedor/logo_steam.svg" class="steamimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv21">
+                                <div>
+                                    <h5 class=" co " id="rayon">5.32 $   
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="oferv31">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6  mb-3">
+                    <div class="ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="/views/img/ofertas/ofertas steam/header.jpg" alt="" class="horizontalimg">
+                        <img src="/views/img/proveedor/logo_steam.svg" class="steamimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-100%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv21">
+                                <div>
+                                    <h5 class=" co " id="rayon">10.0 $   
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="oferv31">
+                                <div>
+                                    <h4 class=" co text-secondary ">0.0 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                </div>
+                    </div>
+                    
+                <div class="col-md-6  mb-3">
+                    <div class="ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="/views/img/ofertas/ofertas steam/header_alt_assets_1.jpg" alt="" class="horizontalimg">
+                        <img src="/views/img/proveedor/logo_steam.svg" class="steamimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-35%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv21">
+                                <div>
+                                    <h5 class=" co " id="rayon">7.50 $   
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="oferv31">
+                                <div>
+                                    <h4 class=" co text-secondary ">5.20 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6  mb-3">
+                    <div class=" ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="/views/img/ofertas/ofertas steam/header_ratio.jpg" alt="" class="horizontalimg">
+                        <img src="/views/img/proveedor/logo_steam.svg" class="steamimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-15%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv21">
+                                <div>
+                                    <h5 class=" co " id="rayon">100 $
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="oferv31">
+                                <div>
+                                    <h4 class=" co text-secondary ">75.0 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class=" ofertascud d-flex flex-column text-md-left bg-dark mb-2 p-3 p-sm-1">
+                        <img src="/views/img/ofertas/ofertas epic/soulvars-hy3ma.webp" alt="" class="verticalimg">
+                        <img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="epicimg">
+                        <div class="descuento ">
+                        <div id="oferv">
+                            <div>
+                                <h4 class=" co text-white">-25%</h4>
+                            </div>
+                        </div>
+                        <div id="oferv2">
+                            <div>
+                                <h5 class=" co " id="rayon">5.32 $   
+                                </h5>
+                            </div>
+                        </div>
+                        <div id="oferv3">
+                            <div>
+                                <h4 class=" co text-secondary ">3.99 $   
+                                </h4>
+                            </div>
+                        </div>
+                        </div>
+                        <h6 class="" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    
+                    </div>
+                   
+                    
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 ">
+                    <div class=" ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="/views/img/ofertas/ofertas epic/shadow-gambit--the-cursed-crew-6jaeo.webp" alt="" class="verticalimg">
+                        <img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="epicimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv2">
+                                <div>
+                                    <h5 class=" co" id="rayon">5.32 $   
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="oferv3">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 ">
+                    <div class=" ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                        <img src="/views/img/ofertas/ofertas epic/hero_capsule.jpg" alt="" class="verticalimg">
+                        <img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="epicimg">
+                        <div class="descuento ">
+                            <div id="oferv">
+                                <div>
+                                    <h4 class=" co text-white">-25%</h4>
+                                </div>
+                            </div>
+                            <div id="oferv2">
+                                <div>
+                                    <h5 class=" co " id="rayon">5.32 $   
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="oferv3">
+                                <div>
+                                    <h4 class=" co text-secondary ">3.99 $   
+                                    </h4>
+                                </div>
+                            </div>
+                            </div>
+                        <h6 class="" href="" id="tituloof">La oferta termina el 31 AGO a las 1:00 p. m..</h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ofertas End -->
+<!-- free play for epic games Start -->
+<div class="container-fluid pt-5 bg-dark ">
+    <div class="container py-1" id="freediv">
+        
+        <div class="textofer">
+          <a href="#freediv" class="ancla"><h3 class="text-info mb-1" herf>Juegos gratuitos</h3></a>
+            
+        </div>
+        <div class="buttonsbd ml-auto ">
+            <button onclick="window.location.href = '/freee';" class="oferbtn2" >Ver Mas</button>
+            </div>
+            <br>
+        
+        <div class="row pb-3 ">
+            <div class="col-md-6 mb-3">
+                <div class="ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                    <img src="https://cdn1.epicgames.com/offer/e209b2d1d5384f639335f64e3e6c4bb8/EGS_HomeworldDesertsofKharak_BlackbirdInteractive_S1_2560x1440-31319bacd65f25e6eb277bef9c8e8c53?h=480&quality=medium&resize=1&w=854" alt="" class="freeplay">
+                    <img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="epicimgh">
+                    <div class="freeplayforepic ">
+                        <div id="ofervfree">
+                            <div>
+                                <h5 class=" co text-white">Gratis Ahora</h5>
+                            </div>
+                        </div>
+                        <h6 class="" href="" id="tituloof">Gratis hasta el 31 ago a la(s) 11:00</h6>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6  mb-3">
+                <div class="ofertascud d-flex flex-column text-center bg-dark mb-2 p-3 p-sm-1">
+                    <img src="https://cdn1.epicgames.com/78473822f724474d8e436f6bde735623/offer/EGS_CaveStory_NicalisIncStudioPixel_S1-2560x1440-23b558de8df0be248f4a32654638ca19.jpg?h=480&quality=medium&resize=1&w=854" alt="" class="freeplay">
+                    <img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="epicimgh">
+                    <div class="freeplayforepic ">
+                        <div id="ofervfreeprox">
+                            <div>
+                                <h5 class=" co text-white">Próximamente</h5>
+                            </div>
+                        </div>
+                        <h6 class="" href="" id="tituloof">Gratis del 31 ago al 07 sept</h6>
+                        </div>
+                   
+            </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- free play for epic games Start -->
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-1 px-sm-3 px-md-4" id="footerbg">
+        <div class="row pt-1">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-danger">Biding</span>Game</h1>
+                <p class="justificado">Biding Game es un innovador metabuscador diseñado para los apasionados de los videojuegos digitales. Con la misión de ofrecer la mejor experiencia de compra en línea, Biding Game rastrea y compara ofertas de videojuegos en múltiples plataformas y tiendas en línea, todo en un solo lugar conveniente.</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-info mb-4">Ponte en contacto</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Cercado, Cochabamba, Bolivia</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+591 694 50362</p>
+                        <p><i class="fa fa-envelope mr-2"></i>rodrigedmoncl@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-info mb-4">Enlaces Populares</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                            <a class="text-white mb-2" href="/ofers"><i class="fa fa-angle-right mr-2"></i>Ofertas</a>
+                            <a class="text-white mb-2" href="/freee"><i class="fa fa-angle-right mr-2"></i>Juegos gratuitos</a>
+                            <a class="text-white mb-2" href="/mostwanted"><i class="fa fa-angle-right mr-2"></i>Lo mas buscado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">BidingGame.search</a>. Todos los derechos reservados. Diseñado por
+                    <a class="text-white font-weight-bold" href="">blue-blood software</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Términos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primaryy back-to-top"><i class="fa fa-search"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/views/css/scss/lib/easing/easing.min.js"></script>
+    <script src="/views/css/scss/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+
+    <!-- Template Javascript -->
+    <script src="/views/js/main.js"></script>
+</body>
+
+</html>

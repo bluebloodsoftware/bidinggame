@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ofertas Especiales</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="/views/css/scss/lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/views/css/scss/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/views/css/scss/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/views/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/views/img/logos/icon.png">
+</head>
+
+<body>
+     <!-- Spinner Start -->
+   <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- Spinner End -->
+    
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5 ">
+            <a href="index.html" class="nav-item nav-link d-none d-lg-block"><img src="/views/img/logos/logotrasp.png" width="60px" height="60px"></a>
+            <a href="" class="navbar-brand d-block d-lg-block">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-danger">Biding</span>Game</h1>
+            </a>
+            <!--start divisa and region1-->
+            
+            <div class="share-button"id="paisfree" >
+                <div class="share-button__back">
+                  <a class="share__link" href="#" title="Dólar">
+                    <img src="/views/img/navsup/divisa/OIP.png" width="40px" height="40px">
+              </a>
+              <a class="share__link " href="#" title="Euro">
+                <img src="/views/img/navsup/divisa/OIP (1).png " width="40px" height="40px">
+              </a>
+              <a class="share__link" href="#" title="Peso Boliviano">
+                <img src="/views/img/navsup/divisa/800px_COLOURBOX48283751.png " width="40px" height="40px">
+              </a>
+                </div>
+                <div class="share-button__front">
+                  <p class="share-button__text">divisa</p>
+                </div>
+              </div>
+              <!--end divisa y region1-->
+              <!--start divisa and region2-->
+            
+            <div class="share-button" id="paisfree1">
+                <div class="share-button__back" >
+                    <a class="share__link" href="#" title="bolivia" id="pais2">
+                    <img src="/views/img/navsup/region/descarga (3).ico" width="40px" height="40px">
+                    </a>
+                    <a class="share__link " href="#" title="colombia" id="pais2">
+                            <img src="/views/img/navsup/region/Flag_of_Colombia.svg.png" width="40px" height="40px">
+                    </a>
+                    <a class="share__link" href="#" title="brazil" id="pais2">
+                            <img src="/views/img/navsup/region/Flag_of_Brazil.svg.ico " width="40px" height="40px">
+                    </a>
+                </div>
+                    <div class="share-button__front">
+                        <p class="share-button__text">Pais</p>
+                    </div>
+            </div>
+              <!--end divisa y region2-->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="/" class="nav-item nav-link" id="freenav">Inicio</a>
+                    <a href="/mostwanted" class="nav-item nav-link"id="freenav">Mas buscados</a>
+                    <a href="/freee" class="nav-item nav-link"id="freenav">Gratuitos </a> 
+                </div>
+                <button id="perfilbtn"><img class="rounded-circle" src="/views/img/usuarios/publico/user1.jpeg" alt="" ></button>
+                <h6 class="text-white ml-2">Riper14</h6>
+                <form id="perfil">
+        
+                    <div class="filtro">
+                        <a href="#" class="dspla text-white">Mi Perfil</a>
+                        <a href="#" class="dspla text-white">Configuraciones</a>
+                        <a href="#" class="dspla text-white">Cerrar Secion</a>
+                    </div>
+        
+                </form>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    
+    <!--segundo nav metabuscador start-->
+    <div class="">
+        <nav class="scrolling-nav d-none d-lg-block  " id="scrollnavm">
+            <button id="toggleFilters" class="btn">Mostrar Filtros</button>
+            <form id="filtroForm">
+        
+                <div class="filtro">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="accion">Acción</option>
+                        <option value="aventura" selected>Aventura</option>
+                        <option value="arcade" selected>Arcade</option>
+                        <option value="deportes" selected>Deportes</option>
+                        <option value="fps/fpp" selected>FPS/FPP</option>
+                        <option value="estrategia" selected>Estrategia</option>
+                        <option value="simulacion" selected>Simulación</option>
+                        <option value="todos" selected>Todas las categorias</option>
+                        <option value="careeras">Carreras</option>
+                        <option value="btroyale">Battle Royale</option>
+                        <option value="multijugador">Multijugador</option>
+                        <option value="moba">Moba</option>  
+                        <!-- Otros géneros -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="plataforma">Tienda:</label>
+                    <select id="plataforma" name="plataforma">
+                        <option value="todos" selected>Todas las tiendas</option>
+                        <option value="epic">Epic Games</option>
+                        <option value="steam">Steam</option>
+                        <option value="uplay">Uplay</option>
+                        <option value="origin">Origin</option>
+                        <option value="instant">Instant Gaming</option>
+                        <option value="eneba">Eneba</option>
+
+                        <!-- Otras plataformas -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="edad">Edad:</label>
+                    <select id="edad" name="edad">
+                        <option value="10+">Mayores de 10 años</option>
+                        <option value="todos" selected>Todos los públicos</option>
+                        <option value="13+">Mayores de 13 años</option>
+                        <option value="17+">Mayores de 17 años</option>
+                        <option value="18+">Mayores de 18 años</option>
+                        <!-- Otras opciones de edad -->
+                    </select>
+                </div>
+        
+                <div class="filtro">
+                    <label for="precio">Precio:</label>
+                    <select id="precio" name="precio">
+                        <option value="menos20">Menos de $20</option>
+                        <option value="gratis">Gratis</option>
+                        <option value="todos" selected>Todos los Precios</option>
+                        <option value="menos60">Menos de $60</option>
+                        <option value="menos100">Menos de $100</option>
+                        <option value="mas100">Mas de $100</option>
+                        <!-- Otros rangos de precio -->
+                    </select>
+                </div>
+            </form>
+            
+            <div class="metabuscador" id="mtbid">
+                <input id="searchInput" type="text" placeholder="Buscar" >
+                <div class="mtbbdg">
+                    <i class="fa fa-search" id="fa fa"></i>
+                </div>
+            </div>     
+        </nav>
+    </div>
+    <!--segundo nav metabuscador end-->
+
+  
+
+    <!-- Blog Start -->
+    <div class="container pt-5 mt-5">
+<!-- free play for epic games Start -->
+<div class="d-flex flex-column text-md-left mb-1 pt-5">     
+    <h2 class=" title display-5 m-0 font-weight-lighter "><span class="text-white">Ofertas Especiales</span></h2>
+    
+        </div>
+        <div class="filtro" id="orderp">
+            <label class="text-white" for="orderp">Ordenar por:</label>
+            <select id="ordenar" name="ordenar">
+                <option value="populares">Populares</option>
+                <option value="precioasc" selected>Precio asc.</option>
+                <option value="preciodes" selected>Precio des.</option>
+                <option value="nombre" selected>Nombre</option>
+                <!-- Otros géneros -->
+            </select>
+        </div>
+        <div class="row pb-3 ">
+            <div class="col-lg-14 mb-4">
+                <div class="card border-0 d-flex">
+                    
+                    <div class=" proyection card-body bg-dark p-4 d-flex">
+                        <img class="card-img-top" src="/views/img/ofertas/ofertas steam/header.jpg" id="freeplayimg" alt="">
+                        <video class="video" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256963031/movie480_vp9.webm?t=1691718299" muted loop autoplay></video>
+                        <div class="mr-2" >
+                            <h4 class="tiltefreeplay card-title text-truncate text-white">Apex Legends™</h4>
+                            <a href="" class="nav-item nav-link"id="freenav">Battle Royale</a>
+                            <a href="" class="nav-item nav-link"id="freenav">FPS </a> 
+                            <a href="" class="nav-item nav-link"id="freenav">Multijugador</a>
+                            <a href="" class="nav-item nav-link"id="freenav">Free to Play</a>
+                        </div>
+                        <div class="mr-2 align-items-center"  >
+                            <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/logo_steam.svg" class="" width="120px" height="70px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="mr-2" width="30px" height="30px">Epic Games Stores</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/origin.png" class="mr-2" width="40px" height="40px">Origin</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Instant-Gaming-Thumb-Square-PNG-150x144-PhotoRoom.png-PhotoRoom.png" class="" width="120px" height="80px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              
+                            
+                            <img class="adde" src="/views/img/edad/edad10.png" width="50px" height="60px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-14 mb-4">
+                <div class="card border-0 d-flex">
+                    
+                    <div class=" proyection card-body bg-dark p-4 d-flex">
+                        <img class="card-img-top" src="/views/img/ofertas/ofertas steam/header_alt_assets_1.jpg" id="freeplayimg" alt="">
+                        <video class="video" src="https://cdn.cloudflare.steamstatic.com/steam/apps/81958/movie480.webm?t=1554409259" muted loop autoplay></video>
+                        <div class="mr-2" >
+                            <h4 class=" tiltefreeplay card-title text-truncate text-white">Counter-Strike: Global Offensive</h4>
+                            <a href="" class="nav-item nav-link"id="freenav">Battle Royale</a>
+                            <a href="" class="nav-item nav-link"id="freenav">FPS </a> 
+                            <a href="" class="nav-item nav-link"id="freenav">Multijugador</a>
+                            <a href="" class="nav-item nav-link"id="freenav">Free to Play</a>
+                        </div>
+                        
+                        
+                        <div class="mr-2 align-items-center"  >
+                            <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/logo_steam.svg" class="" width="120px" height="70px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="mr-2" width="30px" height="30px">Epic Games Stores</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/origin.png" class="mr-2" width="40px" height="40px">Origin</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Instant-Gaming-Thumb-Square-PNG-150x144-PhotoRoom.png-PhotoRoom.png" class="" width="120px" height="80px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              
+                            
+                            <img class="adde" src="/views/img/edad/edad10.png" width="50px" height="60px">
+                        </div>
+                        
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-14 mb-4">
+                <div class="card border-0 d-flex">
+                    
+                    <div class="proyection card-body bg-dark p-4 d-flex">
+                        <img class="card-img-top" src="/views/img/ofertas/ofertas steam/header_ratio (1).jpg" id="freeplayimg" alt="">
+                        <video class="video" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256965333/movie480_vp9.webm?t=1692740593" muted loop autoplay></video>
+                        <div class="mr-2" >
+                            <h4 class="tiltefreeplay card-title text-truncate text-white">Destiny 2</h4>
+                            <a href="" class="nav-item nav-link"id="freenav">Battle Royale</a>
+                            <a href="" class="nav-item nav-link"id="freenav">FPS </a> 
+                            <a href="" class="nav-item nav-link"id="freenav">Multijugador</a>
+                            <a href="" class="nav-item nav-link"id="freenav">Free to Play</a>
+                        </div>
+                        
+                        
+                        <div class="mr-2 align-items-center"  >
+                            <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/logo_steam.svg" class="" width="120px" height="70px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="mr-2" width="30px" height="30px">Epic Games Stores</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/origin.png" class="mr-2" width="40px" height="40px">Origin</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Instant-Gaming-Thumb-Square-PNG-150x144-PhotoRoom.png-PhotoRoom.png" class="" width="120px" height="80px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              
+                            
+                            <img class="adde" src="/views/img/edad/edad10.png" width="50px" height="60px">
+                        </div>
+                        
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-14 mb-4">
+                <div class="card border-0 d-flex">
+                    
+                    <div class=" proyection card-body bg-dark p-4 d-flex">
+                        <img class="card-img-top" src="/views/img/ofertas/ofertas steam/header_ratio.jpg" id="freeplayimg" alt="">
+                        <video class="video" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256692021/movie480.webm?t=1599609272" muted loop autoplay></video>
+                        <div class="mr-2" >
+                            <h4 class="tiltefreeplay card-title text-truncate text-white">Dota 2</h4>
+                            <a href="" class="nav-item nav-link"id="freenav">Moba </a> 
+                            <a href="" class="nav-item nav-link"id="freenav">Multijugador</a>
+                            <a href="" class="nav-item nav-link"id="freenav">Free to Play</a>
+                        </div>
+                        
+                        
+                        <div class="mr-2 align-items-center"  >
+                            <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/logo_steam.svg" class="" width="120px" height="70px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="mr-2" width="30px" height="30px">Epic Games Stores</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/origin.png" class="mr-2" width="40px" height="40px">Origin</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Instant-Gaming-Thumb-Square-PNG-150x144-PhotoRoom.png-PhotoRoom.png" class="" width="120px" height="80px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              
+                            
+                            <img class="adde" src="/views/img/edad/edad10.png" width="50px" height="60px">
+                        </div>
+                        
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-14 mb-4">
+                <div class="card border-0 d-flex">
+                    
+                    <div class=" proyection card-body bg-dark p-4 d-flex">
+                        <img class="card-img-top" src="/views/img/juegos/freetoplay/efoot.jpg" id="freeplayimg" alt="">
+                        <video class="video" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256961875/movie480_vp9.webm?t=1691150855" muted loop autoplay></video>
+                        <div class="mr-2" >
+                            <h4 class="tiltefreeplay card-title text-truncate text-white">eFootball™ 2023</h4>
+                            <a href="" class="nav-item nav-link"id="freenav">Battle Royale</a>
+                            <a href="" class="nav-item nav-link"id="freenav">FPS </a> 
+                            <a href="" class="nav-item nav-link"id="freenav">Multijugador</a>
+                            <a href="" class="nav-item nav-link"id="freenav">Free to Play</a>
+                        </div>
+                        
+                        
+                        <div class="mr-2 align-items-center"  >
+                            <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/logo_steam.svg" class="" width="120px" height="70px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="mr-2" width="30px" height="30px">Epic Games Stores</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/origin.png" class="mr-2" width="40px" height="40px">Origin</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Instant-Gaming-Thumb-Square-PNG-150x144-PhotoRoom.png-PhotoRoom.png" class="" width="120px" height="80px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              
+                            
+                            <img class="adde" src="/views/img/edad/edad10.png" width="50px" height="60px">
+                        </div>
+                        
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-14 mb-4">
+                <div class="card border-0 d-flex">
+                    
+                    <div class="proyection card-body bg-dark p-4 d-flex">
+                        <img class="card-img-top" src="/views/img/juegos/freetoplay/hello.jpg" id="freeplayimg" alt="">
+                        <video class="video" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256953174/movie480_vp9.webm?t=1687281210" muted loop autoplay></video>
+                        <div class="mr-2" >
+                            <h4 class="tiltefreeplay card-title text-truncate text-white">Halo Infinite</h4>
+                            <a href="" class="nav-item nav-link"id="freenav">Battle Royale</a>
+                            <a href="" class="nav-item nav-link"id="freenav">FPS </a> 
+                            <a href="" class="nav-item nav-link"id="freenav">Multijugador</a>
+                            <a href="" class="nav-item nav-link"id="freenav">Free to Play</a>
+                        </div>
+                        
+                        
+                        <div class="mr-2 align-items-center"  >
+                            <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/logo_steam.svg" class="" width="120px" height="70px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="mr-2" width="30px" height="30px">Epic Games Stores</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/origin.png" class="mr-2" width="40px" height="40px">Origin</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Instant-Gaming-Thumb-Square-PNG-150x144-PhotoRoom.png-PhotoRoom.png" class="" width="120px" height="80px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              
+                            
+                            <img class="adde" src="/views/img/edad/edad10.png" width="50px" height="60px">
+                        </div>
+                        
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-14 mb-4">
+                <div class=" card border-0 d-flex">
+                    
+                    <div class="proyection card-body bg-dark p-4 d-flex">
+                        <img class="card-img-top" src="/views/img/juegos/freetoplay/fli.jpg" id="freeplayimg" alt="">
+                        <video class="video" src="https://cdn.cloudflare.steamstatic.com/steam/apps/256942748/movie480_vp9.webm?t=1692789961" muted loop autoplay></video>
+                        <div class="mr-2" >
+                            <h4 class="tiltefreeplay card-title text-truncate text-white">Farlight 84</h4>
+                            <a href="" class="nav-item nav-link"id="freenav">Battle Royale</a>
+                            <a href="" class="nav-item nav-link"id="freenav">FPS </a> 
+                            <a href="" class="nav-item nav-link"id="freenav">Multijugador</a>
+                            <a href="" class="nav-item nav-link"id="freenav">Free to Play</a>
+                        </div>
+                        
+                        
+                        <div class="mr-2 align-items-center"  >
+                            <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/logo_steam.svg" class="" width="120px" height="70px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Epic_Games_logo.svg.png" class="mr-2" width="30px" height="30px">Epic Games Stores</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/origin.png" class="mr-2" width="40px" height="40px">Origin</i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              <div class="containerofer ">
+                                <div class="box box1"><img src="/views/img/proveedor/Instant-Gaming-Thumb-Square-PNG-150x144-PhotoRoom.png-PhotoRoom.png" class="" width="120px" height="80px"></i></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"><h5 class=" co " id="rayon">5.32 $</h5></div>
+                                <div class="box box5"><button class="full-width-button"><h5 class=" text-white " id="">5.32 $</h5></button> </div>
+                              </div>
+                              
+                            
+                            <img class="adde" src="/views/img/edad/edad10.png" width="50px" height="60px">
+                        </div>
+                        
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination justify-content-center mb-4">
+                    <li class="page-item disabled">
+                      <a class="page-link bg-dark" href="#" aria-label="Previous">
+                        <span aria-hidden="true" class="text-white ">&laquo; Anterior</span>
+                      </a>
+                    </li>
+                    <li class="page-item active" ><a class="page-link text-white bg-dark" href="freeplay.html">1</a></li>
+                    <li class="page-item"><a class="page-link text-white bg-dark" href="page2.html">2</a></li>
+                    <li class="page-item"><a class="page-link text-white bg-dark" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link bg-dark" href="page2.html" aria-label="Next">
+                        <span aria-hidden="true"class="text-white">Siguiente &raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-1 px-sm-3 px-md-4" id="footerbg">
+        <div class="row pt-1">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-danger">Biding</span>Game</h1>
+                <p class="justificado">Biding Game es un innovador metabuscador diseñado para los apasionados de los videojuegos digitales. Con la misión de ofrecer la mejor experiencia de compra en línea, Biding Game rastrea y compara ofertas de videojuegos en múltiples plataformas y tiendas en línea, todo en un solo lugar conveniente.</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-info mb-4">Ponte en contacto</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Cercado, Cochabamba, Bolivia</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+591 694 50362</p>
+                        <p><i class="fa fa-envelope mr-2"></i>rodrigedmoncl@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-info mb-4">Enlaces Populares</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                            <a class="text-white mb-2" href="/ofers"><i class="fa fa-angle-right mr-2"></i>Ofertas</a>
+                            <a class="text-white mb-2" href="/freee"><i class="fa fa-angle-right mr-2"></i>Juegos gratuitos</a>
+                            <a class="text-white mb-2" href="/mostwanted"><i class="fa fa-angle-right mr-2"></i>Lo mas buscado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">BidingGame.search</a>. Todos los derechos reservados. Diseñado por
+                    <a class="text-white font-weight-bold" href="">blue-blood software</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Términos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/views/css/scss/lib/easing/easing.min.js"></script>
+    <script src="/views/css/scss/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/views/css/scss/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    
+    <!-- Template Javascript -->
+    <script src="/views/js/main.js"></script>
+</body>
+
+</html>
